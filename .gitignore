@@ -1,0 +1,12 @@
+# Python
+venv/
+
+# Data
+data/
+
+# Build
+build/
+
+# CLion
+cmake-build-debug/
+.idea/
