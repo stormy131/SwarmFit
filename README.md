@@ -73,7 +73,7 @@ SwarmFit allows users to customize optimization and PSO dynamics by modifying pa
 
 #### Fit Control Parameters
 
-The following constants in [`const.h`](../src/const.h) control the fitting behavior:
+The following constants in [`const.h`](./src/const.h) control the fitting behavior:
 
 - `Constants::MAX_STEPS`: Maximum number of optimization iterations.
 - `Constants::MIN_DELTA`: Minimum required improvement between steps.
@@ -83,7 +83,7 @@ These constants determine how long training should continue and under what condi
 
 #### PSO Configuration Parameters
 
-The behavior of the optimizer is also controlled by constants in [`const.h`](../src/const.h):
+The behavior of the optimizer is also controlled by constants in [`const.h`](./src/const.h):
 
 - `Constants::SEED`: Random seed for reproducibility.
 - `Constants::N_PARTICLES`: Number of particles in the swarm.
@@ -158,7 +158,7 @@ def target_function(X: np.ndarray) -> np.ndarray:
 ```
 
 You can modify this function directly in the script to generate datasets based on other relationships or model types.  
-The definition is located in [`helper.py`](../src/helper.py#L26-L27), and any changes to it will affect how synthetic target values are computed.
+The definition is located in [`helper.py`](./src/helper.py#L26-L27), and any changes to it will affect how synthetic target values are computed.
 
 ---
 
@@ -239,4 +239,4 @@ python3 helper.py --task plot --actual ./data/synthetic.csv --predicted ./data/p
 
 #### Generated plot
 
-![Prediction Plot](./plot.png)
+![Prediction Plot](./docs/plot.png)
